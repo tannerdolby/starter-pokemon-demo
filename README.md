@@ -1,4 +1,4 @@
-<img width="563" alt="Screen Shot 2020-07-01 at 3 41 41 PM" src="https://user-images.githubusercontent.com/48612525/86298126-da0b4a80-bbb1-11ea-89e4-b9ab48528ecf.png">
+<img width="1050" alt="Screen Shot 2020-07-01 at 3 41 41 PM" src="https://user-images.githubusercontent.com/48612525/86298126-da0b4a80-bbb1-11ea-89e4-b9ab48528ecf.png">
 
 # Starter Pokemon Demo
 
