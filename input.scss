@@ -215,4 +215,10 @@ html {
         z-index: 10;
     }
 }
-
+@media only screen and (max-height: 500px) {
+    #poke-ball {
+        position: absolute !important;
+        top: 5% !important;
+        left: 5%;
+    }
+}
