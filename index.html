@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Welcome to Pokemon!</title>
+        <meta name="description" content="Pokemon Loookup">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="output.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="start-pokemon">
+                <img class="starters squirtle" src="pokemon.svg" alt="Squirtle" />
+                <img class="starters charmander" src="charmander.svg" alt="Charmander" />
+                <img class="starters bulbasaur" src="bulbusar.svg" alt="Bulbasaur" />
+            </div>
+            <div class="title">
+                <h1 id="lab">Prof Oak's Lab</h1>
+            </div>
+            <div class="btn-group">
+                <button id="choose" class="btn">Choose a starter pokemon!</button>
+                <button id="reset" class="btn">Reset</button>
+            </div>
+            <!-- <button class="btn">Choose a starter pokemon!</button>
+            <button class="btn">Reset</button> -->
+            <div class="flex">
+                <div id="sq-prev" class="starter-preview">
+                    <img id="water" class="small-img" src="water-drop.svg" alt="water droplet" />
+                    <img id="squirt" class="for-display" src="pokemon.svg" alt="squirtle" />
+                    <p id="nameSq">Squirtle</p>
+                </div>
+                <div id="charm-prev" class="starter-preview">
+                    <img id="flame" class="small-img" src="redFire.svg" alt="flame" />
+                    <img id="char" class="for-display" src="charmander.svg" alt="charmander" />
+                    <p id="nameChar">Charmander</p>
+                </div>
+                <div id="bulb-prev" class="starter-preview">
+                    <img id="leaf" class="small-img" src="leaf.svg" alt="leaf" />
+                    <img id="bulb" class="for-display" src="bulbusar.svg" alt="bulbasaur" />
+                    <p id="nameBulb">Bulbasaur</p>
+                </div>
+            </div>
+            <div class="bottom">
+                <img id="poke-ball" src="pokeball.svg" alt="pokeball" />
+
+                <div class="pokemon-tile">
+                    <div class="top">
+                        <p id="poke-name"></p>
+                        <p id="poke-hp"></p>
+                    </div>
+                    <img id="pokemon-img" />
+                    <div class="poke-data">
+                        <p id="poke-type"></p>
+                        <p id="poke-weight"></p>
+                    </div>
+                </div>
+                <div class="final">
+                    <h2 id="final-msg"></h2>
+                </div>
+            
+            
+            </div>
+        </div>
+        
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev">Nikita Golubev</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/roundicons-freebies" title="Roundicons Freebies">Roundicons Freebies</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+        
+        <!--GSAP scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+        <!-- Font awesome -->
+        <script src="https://kit.fontawesome.com/e03d7ac5cf.js" crossorigin="anonymous"></script>
+        <!-- Custom JS -->
+        <script src="script.js"></script>
+
+    </body>
+</html>

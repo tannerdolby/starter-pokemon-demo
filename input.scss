@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Notable&display=swap');
+
+$font-pt-serif: "PT Serif", sans-serif;
+$font-noto-sans: "Noto Sans KR", sans-serif;
+$font-pangolin: "Pangolin", sans-serif;
+$font-museo-moderno: "Museo Moderno", sans-serif;
+$font-notable: "Notable", sans-serif;
+$shadowOne: 1px 1px 1px rgba(0, 0, 0, 0.2);
+$shadowTwo: 10px 0px 90px 29px rgba(242,242,247,1);
+$customShadow: 0px 0px 20px -6px rgba(66,63,66,0.81);
+$customShadowTwo:  0px 0px 20px -9px rgba(66,63,66,0.81);
+$customShadowThree: 0px 0px 15px -9px rgba(66,63,66,0.81);
+
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+@mixin box-shadow($shadowConfig) {
+    -webkit-box-shadow: $shadowConfig;
+    -moz-box-shadow: $shadowConfig;
+    box-shadow: $shadowConfig;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    
+    body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: #FFF;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .start-pokemon {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .starters {
+        height: 40px;
+        width: 40px;
+        margin: 0 15px 0 15px;
+    }
+
+    .squirtle {
+        position: absolute;
+        top: 70px;
+        left: 35%;
+        opacity: 0;
+    }
+
+    .charmander {
+        position: absolute;
+        top: 70px;
+        right: 35%;
+        visibility: hidden;
+    }
+
+    .bulbasaur {
+        position: absolute;
+        top: 70px;
+        left: 47%;
+        visibility: hidden;
+    }
+
+    .title {
+        margin: 5px 20px 10px 20px;
+    }
+
+    .title h1 {
+        color: #000;
+        font-size: 3rem;
+        text-transform: uppercase;
+        // font-family: $font-noto-sans;
+        font-family: $font-notable;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+    .bottom {
+        display: flex;
+        width: 100%;
+        height: 250px;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 20px 30px 20px;
+
+        .final {
+            display: flex;
+            margin: 30px;
+            font-family: $font-pangolin;
+        }
+
+        #back-card {
+            position: absolute;
+            margin: 10px;
+            top: 55%;
+            height: 270px;
+            width: 320px;
+            z-index: 20;
+            visibility: hidden;
+        }
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 50%;
+        margin: 20px 20px 5px 20px;
+
+        .starter-preview {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 5px;
+
+            p {
+                font-family: $font-pangolin;
+                color: #000;
+                border-bottom: 2px solid transparent;
+                transition: 0.7s all ease;
+            }
+
+            .small-img {
+                height: 35px;
+                width: 35px;
+                visibility: hidden;
+            }
+        }
+        .starter-preview:hover {
+            cursor: pointer;
+        }
+
+        div {
+            font-size: 1.5rem;
+
+            img {
+                height: 60px;
+                width: 60px;
+            }
+        }
+    }
+    .btn-group {
+        .btn {
+            margin-top: 5px;
+            margin-bottom: 10px;
+            background: #FFF;
+            color: #000;
+            border-radius: 500px;
+            border: 2px solid #000;
+            padding: 10px 20px 10px 20px;
+            box-shadow: $shadowOne;
+            outline: none;
+        }
+        .btn:hover {
+            cursor: pointer;
+            background: #ddd;
+        }
+    }
+    
+    .pokemon-tile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 250px;
+        height: 250px;
+        background: linear-gradient(#FFF, #EEE);
+        padding: 5px;
+        margin-top: 10px;
+        border: 1px solid #ddd;
+        // border: 3px solid #222;
+        border-radius: 10px;
+        z-index: 2;
+        visibility: hidden;
+        @include box-shadow($customShadowThree);
+
+        .poke-data {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 0.7rem;
+            font-family: $font-noto-sans;
+            color: #000;
+
+            p {
+                margin-left: 1px;
+                margin-right: 1px;
+            }
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            font-family: $font-pt-serif;
+            padding: 5px;
+            font-size: 1.3rem;
+
+            #poke-hp {
+                color: red;
+            }
+        }
+
+        #pokemon-img {
+            margin: 20px;
+            height: 100px;
+            width: 100px;
+            background: transparent;
+            z-index: 1;
+            visibility: hidden;
+
+        }
+    }
+    #poke-ball {
+        height: 70px;
+        width: 70px;
+        position: absolute;
+        top: 65%;
+        z-index: 10;
+    }
+}
+

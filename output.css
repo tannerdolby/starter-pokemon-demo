@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Notable&display=swap");
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+html body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: #FFF;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .start-pokemon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .starters {
+  height: 40px;
+  width: 40px;
+  margin: 0 15px 0 15px;
+}
+.container .squirtle {
+  position: absolute;
+  top: 70px;
+  left: 35%;
+  opacity: 0;
+}
+.container .charmander {
+  position: absolute;
+  top: 70px;
+  right: 35%;
+  visibility: hidden;
+}
+.container .bulbasaur {
+  position: absolute;
+  top: 70px;
+  left: 47%;
+  visibility: hidden;
+}
+.container .title {
+  margin: 5px 20px 10px 20px;
+}
+.container .title h1 {
+  color: #000;
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: "Notable", sans-serif;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.container .bottom {
+  display: flex;
+  width: 100%;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px 30px 20px;
+}
+.container .bottom .final {
+  display: flex;
+  margin: 30px;
+  font-family: "Pangolin", sans-serif;
+}
+.container .bottom #back-card {
+  position: absolute;
+  margin: 10px;
+  top: 55%;
+  height: 270px;
+  width: 320px;
+  z-index: 20;
+  visibility: hidden;
+}
+.container .flex {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin: 20px 20px 5px 20px;
+}
+.container .flex .starter-preview {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  padding: 5px;
+}
+.container .flex .starter-preview p {
+  font-family: "Pangolin", sans-serif;
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: 0.7s all ease;
+}
+.container .flex .starter-preview .small-img {
+  height: 35px;
+  width: 35px;
+  visibility: hidden;
+}
+.container .flex .starter-preview:hover {
+  cursor: pointer;
+}
+.container .flex div {
+  font-size: 1.5rem;
+}
+.container .flex div img {
+  height: 60px;
+  width: 60px;
+}
+.container .btn-group .btn {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  background: #FFF;
+  color: #000;
+  border-radius: 500px;
+  border: 2px solid #000;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+.container .btn-group .btn:hover {
+  cursor: pointer;
+  background: #ddd;
+}
+.container .pokemon-tile {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  background: linear-gradient(#FFF, #EEE);
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  z-index: 2;
+  visibility: hidden;
+  -webkit-box-shadow: 0px 0px 15px -9px rgba(66, 63, 66, 0.81);
+  -moz-box-shadow: 0px 0px 15px -9px rgba(66, 63, 66, 0.81);
+  box-shadow: 0px 0px 15px -9px rgba(66, 63, 66, 0.81);
+}
+.container .pokemon-tile .poke-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 0.7rem;
+  font-family: "Noto Sans KR", sans-serif;
+  color: #000;
+}
+.container .pokemon-tile .poke-data p {
+  margin-left: 1px;
+  margin-right: 1px;
+}
+.container .pokemon-tile .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: "PT Serif", sans-serif;
+  padding: 5px;
+  font-size: 1.3rem;
+}
+.container .pokemon-tile .top #poke-hp {
+  color: red;
+}
+.container .pokemon-tile #pokemon-img {
+  margin: 20px;
+  height: 100px;
+  width: 100px;
+  background: transparent;
+  z-index: 1;
+  visibility: hidden;
+}
+.container #poke-ball {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 65%;
+  z-index: 10;
+}
+
+/*# sourceMappingURL=output.css.map */
