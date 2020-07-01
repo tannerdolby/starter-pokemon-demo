@@ -36,7 +36,6 @@ html {
         background: #FFF;
     }
 }
-
 .container {
     display: flex;
     flex-direction: column;
@@ -48,38 +47,32 @@ html {
         justify-content: space-between;
         align-items: center;
     }
-
     .starters {
         height: 40px;
         width: 40px;
         margin: 0 15px 0 15px;
     }
-
     .squirtle {
         position: absolute;
         top: 70px;
         left: 35%;
         opacity: 0;
     }
-
     .charmander {
         position: absolute;
         top: 70px;
         right: 35%;
         visibility: hidden;
     }
-
     .bulbasaur {
         position: absolute;
         top: 70px;
         left: 47%;
         visibility: hidden;
     }
-
     .title {
         margin: 5px 20px 10px 20px;
     }
-
     .title h1 {
         color: #000;
         font-size: 3rem;
@@ -96,13 +89,11 @@ html {
         justify-content: center;
         align-items: center;
         margin: 10px 20px 30px 20px;
-
         .final {
             display: flex;
             margin: 30px;
             font-family: $font-pangolin;
         }
-
         #back-card {
             position: absolute;
             margin: 10px;
@@ -113,14 +104,12 @@ html {
             visibility: hidden;
         }
     }
-    
     .flex {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         width: 50%;
         margin: 20px 20px 5px 20px;
-
         .starter-preview {
             display: flex;
             flex-direction: column;
@@ -128,14 +117,12 @@ html {
             align-items: center;
             margin: 10px;
             padding: 5px;
-
             p {
                 font-family: $font-pangolin;
                 color: #000;
                 border-bottom: 2px solid transparent;
                 transition: 0.7s all ease;
             }
-
             .small-img {
                 height: 35px;
                 width: 35px;
@@ -145,10 +132,8 @@ html {
         .starter-preview:hover {
             cursor: pointer;
         }
-
         div {
             font-size: 1.5rem;
-
             img {
                 height: 60px;
                 width: 60px;
@@ -172,7 +157,6 @@ html {
             background: #ddd;
         }
     }
-    
     .pokemon-tile {
         display: flex;
         flex-direction: column;
@@ -189,7 +173,6 @@ html {
         z-index: 2;
         visibility: hidden;
         @include box-shadow($customShadowThree);
-
         .poke-data {
             display: flex;
             flex-direction: row;
@@ -198,13 +181,11 @@ html {
             font-size: 0.7rem;
             font-family: $font-noto-sans;
             color: #000;
-
             p {
                 margin-left: 1px;
                 margin-right: 1px;
             }
         }
-
         .top {
             display: flex;
             justify-content: space-between;
@@ -213,12 +194,10 @@ html {
             font-family: $font-pt-serif;
             padding: 5px;
             font-size: 1.3rem;
-
             #poke-hp {
                 color: red;
             }
         }
-
         #pokemon-img {
             margin: 20px;
             height: 100px;
@@ -226,7 +205,6 @@ html {
             background: transparent;
             z-index: 1;
             visibility: hidden;
-
         }
     }
     #poke-ball {
