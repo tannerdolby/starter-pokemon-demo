@@ -59,7 +59,7 @@ html body {
   color: #000;
   font-size: 3rem;
   text-transform: uppercase;
-  font-family: "Notable", sans-serif;
+  font-family: "PT Serif", sans-serif;
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -75,15 +75,6 @@ html body {
   display: flex;
   margin: 30px;
   font-family: "Pangolin", sans-serif;
-}
-.container .bottom #back-card {
-  position: absolute;
-  margin: 10px;
-  top: 55%;
-  height: 270px;
-  width: 320px;
-  z-index: 20;
-  visibility: hidden;
 }
 .container .flex {
   display: flex;
@@ -127,6 +118,7 @@ html body {
   background: #FFF;
   color: #000;
   border-radius: 500px;
+  margin: 10px;
   border: 2px solid #000;
   padding: 10px 20px 10px 20px;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
@@ -159,13 +151,14 @@ html body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   font-family: "Noto Sans KR", sans-serif;
   color: #000;
 }
 .container .pokemon-tile .poke-data p {
   margin-left: 1px;
   margin-right: 1px;
+  font-family: "Pangolin", sans-serif;
 }
 .container .pokemon-tile .top {
   display: flex;
@@ -195,11 +188,21 @@ html body {
   z-index: 10;
 }
 
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 550px) {
   #poke-ball {
     position: absolute !important;
     top: 5% !important;
-    left: 5%;
+    left: 3%;
+  }
+
+  #poke-ball {
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container .pokemon-tile {
+    margin-left: 50px;
   }
 }
 

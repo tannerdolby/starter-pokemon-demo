@@ -77,8 +77,8 @@ html {
         color: #000;
         font-size: 3rem;
         text-transform: uppercase;
-        // font-family: $font-noto-sans;
-        font-family: $font-notable;
+        // font-family: $font-notable;
+        font-family: $font-pt-serif;
         margin-bottom: 5px;
         margin-top: 5px;
     }
@@ -93,15 +93,6 @@ html {
             display: flex;
             margin: 30px;
             font-family: $font-pangolin;
-        }
-        #back-card {
-            position: absolute;
-            margin: 10px;
-            top: 55%;
-            height: 270px;
-            width: 320px;
-            z-index: 20;
-            visibility: hidden;
         }
     }
     .flex {
@@ -147,6 +138,7 @@ html {
             background: #FFF;
             color: #000;
             border-radius: 500px;
+            margin: 10px;
             border: 2px solid #000;
             padding: 10px 20px 10px 20px;
             box-shadow: $shadowOne;
@@ -168,7 +160,6 @@ html {
         padding: 5px;
         margin-top: 10px;
         border: 1px solid #ddd;
-        // border: 3px solid #222;
         border-radius: 10px;
         z-index: 2;
         visibility: hidden;
@@ -178,12 +169,13 @@ html {
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
-            font-size: 0.7rem;
+            font-size: 0.8rem;
             font-family: $font-noto-sans;
             color: #000;
             p {
                 margin-left: 1px;
                 margin-right: 1px;
+                font-family: $font-pangolin;
             }
         }
         .top {
@@ -215,10 +207,22 @@ html {
         z-index: 10;
     }
 }
-@media only screen and (max-height: 500px) {
+@media only screen and (max-height: 550px) {
     #poke-ball {
         position: absolute !important;
         top: 5% !important;
-        left: 5%;
+        left: 3%;
+    }
+    #poke-ball {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .container {
+        .pokemon-tile {
+            margin-left: 50px;
+        }
     }
 }
