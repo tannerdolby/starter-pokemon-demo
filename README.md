@@ -2,20 +2,12 @@
 
 # Starter Pokemon Demo
 
-Take a trip back to the starting zone of Classic Pokemon in Pallet Town. Choose one of the three starter pokemon by clicking on the "Choose a starter pokemon" button.
+Take a trip back to Professor Oak's lab in Pallet Town. It's time to choose a starter pokemon as your companion. Randomly select one of the three starter pokemon by clicking on the "Choose a starter pokemon" button.
 
-# Getting started
-Go check out my Pen [Choose a Starter Pokemon - GSAP/SCSS](https://codepen.io/spherical/pen/mdVqWRx) via [CodePen.io](https://codepen.io)
+View the project on CodePen: [Choose a Starter Pokemon](https://codepen.io/tannerdolby/pen/mdVqWRx)
 
-# Built with
+## Built with
 * [Sass (SCSS)](https://sass-lang.com/)
 * [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 * [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Greensock Animation Platform (GSAP)](https://greensock.com/)
-
-# License
-This project is free for public and open source use.
-
-# Author
-* **Tanner Dolby** - initial work - [@tannercd](https://github.com/tannercd)
-
