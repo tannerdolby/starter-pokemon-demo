@@ -26,6 +26,12 @@ const pokemonCard = document.getElementById("back-card");
 const finalMsg = document.getElementById("final-msg");
 const resetBtn = document.getElementById("reset");
 
+const starterPokemonImages = {
+  "squirtle": "https://user-images.githubusercontent.com/48612525/86188271-00b67c00-baf3-11ea-95ee-1eacbe57588b.png",
+  "charmander": "https://user-images.githubusercontent.com/48612525/86188230-e086bd00-baf2-11ea-8463-4032ec0b546d.png",
+  "bulbasaur": "https://user-images.githubusercontent.com/48612525/86188197-bdf4a400-baf2-11ea-887a-cddc06183939.png"
+};
+
 // Some GSAP
 gsap.set(pokeBall, {
     transformOrigin: "50% 50%"
@@ -79,10 +85,11 @@ document.addEventListener("DOMContentLoaded", () => {
                 image: getPokeImg(poke_id),
                 abilities: json.abilities
             }
-            console.log(pokemon);
 
             // grab image src from API and assign it to DOM element
-            pokeImg.src = pokemon.image;
+            // note: 08/07/22 the Pokeres.bastionbot.org/images/ "image" field
+            // from API response is not longer available
+            pokeImg.src = starterPokemonImages[pokemon.name.toLowerCase()];
             pokeType.textContent = pokemon.type;
             pokeName.textContent = pokemon.name;
             pokeWeight.textContent = `Weight: ${pokemon.weight} lbs.`;
